@@ -317,7 +317,7 @@ Resources:
               ## Download and execute lifecycle script
               aws s3 cp s3://emr-workshops-us-west-2/glue_immersion_day/scripts/sagemaker_glue_lifecycle.sh /home/ec2-user/scripts/
               chmod +x /home/ec2-user/scripts/sagemaker_glue_lifecycle.sh
-              /home/ec2-user/scripts/sagemaker_glue_lifecycle.sh ${StackPrefix}
+              nohup /home/ec2-user/scripts/sagemaker_glue_lifecycle.sh ${StackPrefix}
 
               EOF
 
